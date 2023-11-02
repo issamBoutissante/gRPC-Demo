@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option java_package = "com.sample.grpc";
+
+service Greeter{
+    rpc sayHi(Request) returns (Response);
+}
+
+message Request{
+       string name = 1 ;
+}
+
+message Response{
+      string message = 1;
+      int32  responseCode  = 2;
+}
