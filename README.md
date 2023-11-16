@@ -72,6 +72,9 @@ This project demonstrates a simple gRPC application with a Java server and a Nod
 5. **Configure Protobuf and gRPC Code Generation**: Add the following to your `pom.xml` to generate the server code:
 
     ```xml
+    <properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
    <build>
   		<defaultGoal>clean generate-sources compile install</defaultGoal>
   
